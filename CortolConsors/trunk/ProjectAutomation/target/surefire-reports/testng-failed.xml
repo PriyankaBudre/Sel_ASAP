@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="ConsorsWebTest(failed)">
+    <classes>
+      <class name="test.java.TestsForCortalConsorsWeb">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testConsorsPOC"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- test.java.TestsForCortalConsorsWeb -->
+    </classes>
+  </test> <!-- ConsorsWebTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

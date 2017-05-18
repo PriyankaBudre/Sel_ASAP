@@ -1,0 +1,1657 @@
+!SESSION 2016-10-26 11:06:19.344 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.fx.core 4 0 2016-10-26 11:06:22.758
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core [1262]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+       org.eclipse.jdt.annotation [347]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.fx.osgi.util 4 0 2016-10-26 11:06:22.766
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.osgi.util [1264]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+       org.eclipse.fx.core [1262]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+              org.eclipse.jdt.annotation [347]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.browser 4 0 2016-10-26 11:06:22.781
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.browser [1408]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.osgi.util; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.osgi.util; bundle-version="1.0.0.201408150602"
+       org.eclipse.fx.osgi.util [1264]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+              org.eclipse.fx.core [1262]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+                     org.eclipse.jdt.annotation [347]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.gettingstarted 4 0 2016-10-26 11:06:22.789
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.gettingstarted [1415]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.browser
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.browser; bundle-version="3.6.3.201411271001-RELEASE"; singleton:="true"
+       org.springsource.ide.eclipse.commons.browser [1408]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.osgi.util; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.osgi.util; bundle-version="1.0.0.201408150602"
+              org.eclipse.fx.osgi.util [1264]
+                Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+                  -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+                     org.eclipse.fx.core [1262]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+                            org.eclipse.jdt.annotation [347]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-10-26 11:07:07.137
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-10-26 11:07:07.137
+!MESSAGE Could not load repository template extension contributed by 'org.springsource.ide.eclipse.dashboard.ui' with connectorKind 'jira'
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-10-26 11:07:07.137
+!MESSAGE Could not load repository template extension contributed by 'org.springsource.ide.eclipse.dashboard.ui' with connectorKind 'jira'
+
+!ENTRY org.eclipse.ui 4 4 2016-10-26 11:07:08.434
+!MESSAGE Referenced part does not exist yet: com.ibm.etools.ui.navigator.SDExplorer.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-10-26 11:07:20.455
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-10-26 11:07:20.455
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\singhpur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:26.321
+!MESSAGE Unable to load properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties. Falling back on embedded properties
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.loadProperties(VersionPropertiesProvider.java:276)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:151)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:217)
+	at org.jboss.tools.central.installation.InstallationChecker.<init>(InstallationChecker.java:53)
+	at org.jboss.tools.central.installation.InstallationChecker.getInstance(InstallationChecker.java:66)
+	at org.jboss.tools.central.editors.JBossCentralEditor$HeaderText$3.run(JBossCentralEditor.java:571)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:26.321
+!MESSAGE Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+
+!ENTRY org.jboss.tools.project.examples 4 0 2016-10-26 11:07:26.879
+!MESSAGE All attempts to discover connectors have failed
+!SUBENTRY 1 org.eclipse.mylyn.discovery.core 4 0 2016-10-26 11:07:26.879
+!MESSAGE Failed to get connectors from RemoteProxyWizardDiscoveryStrategy
+!STACK 1
+org.eclipse.core.runtime.CoreException: HTTP Proxy Authentication Required: http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/jbosstools-directory.xml
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.mylyn.internal.discovery.core.util.P2TransportService.stream(P2TransportService.java:92)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.stream(WebUtil.java:161)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.readResource(WebUtil.java:95)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.RemoteExternalBundleDiscoveryStrategy.loadRegistry(RemoteExternalBundleDiscoveryStrategy.java:91)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.ExternalBundleDiscoveryStrategy.performDiscovery(ExternalBundleDiscoveryStrategy.java:117)
+	at org.jboss.tools.project.examples.internal.discovery.ChainedDiscoveryStrategy.performDiscovery(ChainedDiscoveryStrategy.java:62)
+	at org.eclipse.mylyn.internal.discovery.core.model.ConnectorDiscovery.performDiscovery(ConnectorDiscovery.java:114)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardManager.loadWizards(ProxyWizardManager.java:107)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardUpdateJob.run(ProxyWizardUpdateJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	... 14 more
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2016-10-26 11:07:26.880
+!MESSAGE HTTP Proxy Authentication Required: http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/jbosstools-directory.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.mylyn.internal.discovery.core.util.P2TransportService.stream(P2TransportService.java:92)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.stream(WebUtil.java:161)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.readResource(WebUtil.java:95)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.RemoteExternalBundleDiscoveryStrategy.loadRegistry(RemoteExternalBundleDiscoveryStrategy.java:91)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.ExternalBundleDiscoveryStrategy.performDiscovery(ExternalBundleDiscoveryStrategy.java:117)
+	at org.jboss.tools.project.examples.internal.discovery.ChainedDiscoveryStrategy.performDiscovery(ChainedDiscoveryStrategy.java:62)
+	at org.eclipse.mylyn.internal.discovery.core.model.ConnectorDiscovery.performDiscovery(ConnectorDiscovery.java:114)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardManager.loadWizards(ProxyWizardManager.java:107)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardUpdateJob.run(ProxyWizardUpdateJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 3 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:26.880
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.136
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:27.137
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.137
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:27.137
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-26 11:07:27.140
+!MESSAGE Invalid URL: http://download.jboss.org/gatein/quickstarts/jboss-portal-6.2/project-examples-jboss-portal6.2-jbds8.0-001.xml
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.141
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:27.141
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.141
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:27.141
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.143
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:27.144
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.144
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:27.144
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-26 11:07:27.145
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-maven-4.2.GA.xml
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-26 11:07:27.146
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-shared-4.2.GA.xml
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.148
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:27.148
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.149
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:27.149
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-26 11:07:27.150
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-community-4.2.Beta2.xml
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.370
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:27.370
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.370
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2016-10-26 11:07:27.370
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-26 11:07:27.373
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-category-4.2.xml
+
+!ENTRY org.jboss.tools.central 4 0 2016-10-26 11:07:27.607
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.createRemoteFileIOCoreException(InternalURLTransport.java:218)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.checkFile(InternalURLTransport.java:557)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.doGetLastModified(InternalURLTransport.java:211)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:175)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:144)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$2.run(URLTransportUtility.java:279)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:07:27.608
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-26 11:07:27.687
+!MESSAGE System property http.proxyHost is not set but should be 10.32.235.40.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-26 11:07:27.688
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-26 11:07:27.689
+!MESSAGE System property https.proxyHost is not set but should be 10.32.235.40.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-26 11:07:27.690
+!MESSAGE System property https.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-26 11:07:27.691
+!MESSAGE System property socksProxyHost is not set but should be 10.32.235.40.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-26 11:07:27.691
+!MESSAGE System property socksProxyPort is not set but should be 8080.
+!SESSION 2016-10-26 11:16:49.440 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data C:\CortolConsors -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.fx.core 4 0 2016-10-26 11:16:52.893
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core [1262]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+       org.eclipse.jdt.annotation [347]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.fx.osgi.util 4 0 2016-10-26 11:16:52.901
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.osgi.util [1264]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+       org.eclipse.fx.core [1262]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+              org.eclipse.jdt.annotation [347]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.browser 4 0 2016-10-26 11:16:52.927
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.browser [1408]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.osgi.util; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.osgi.util; bundle-version="1.0.0.201408150602"
+       org.eclipse.fx.osgi.util [1264]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+              org.eclipse.fx.core [1262]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+                     org.eclipse.jdt.annotation [347]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.gettingstarted 4 0 2016-10-26 11:16:52.932
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.gettingstarted [1415]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.browser
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.browser; bundle-version="3.6.3.201411271001-RELEASE"; singleton:="true"
+       org.springsource.ide.eclipse.commons.browser [1408]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.osgi.util; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.osgi.util; bundle-version="1.0.0.201408150602"
+              org.eclipse.fx.osgi.util [1264]
+                Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+                  -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+                     org.eclipse.fx.core [1262]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+                            org.eclipse.jdt.annotation [347]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-10-26 11:16:59.281
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-10-26 11:16:59.281
+!MESSAGE Could not load repository template extension contributed by 'org.springsource.ide.eclipse.dashboard.ui' with connectorKind 'jira'
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-10-26 11:16:59.281
+!MESSAGE Could not load repository template extension contributed by 'org.springsource.ide.eclipse.dashboard.ui' with connectorKind 'jira'
+
+!ENTRY org.springsource.ide.eclipse.dashboard.ui 4 0 2016-10-26 11:17:05.910
+!MESSAGE Unexpected exception
+!STACK 1
+org.eclipse.ui.PartInitException: Unable to open editor, unknown editor ID: 'org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard'
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3126)
+	at org.eclipse.ui.internal.WorkbenchPage.access$23(WorkbenchPage.java:3104)
+	at org.eclipse.ui.internal.WorkbenchPage$9.run(WorkbenchPage.java:3086)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3081)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3045)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3026)
+	at org.springsource.ide.eclipse.dashboard.ui.actions.ShowDashboardPageAction$1.runInUIThread(ShowDashboardPageAction.java:77)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SUBENTRY 1 org.eclipse.ui 4 0 2016-10-26 11:17:05.911
+!MESSAGE Unable to open editor, unknown editor ID: 'org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard'
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:05.981
+!MESSAGE Unable to load properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties. Falling back on embedded properties
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.loadProperties(VersionPropertiesProvider.java:276)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:151)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:217)
+	at org.jboss.tools.central.installation.InstallationChecker.<init>(InstallationChecker.java:53)
+	at org.jboss.tools.central.installation.InstallationChecker.getInstance(InstallationChecker.java:66)
+	at org.jboss.tools.central.editors.JBossCentralEditor$HeaderText$3.run(JBossCentralEditor.java:571)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:05.981
+!MESSAGE Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+
+!ENTRY org.jboss.tools.project.examples 4 0 2016-10-26 11:17:06.731
+!MESSAGE All attempts to discover connectors have failed
+!SUBENTRY 1 org.eclipse.mylyn.discovery.core 4 0 2016-10-26 11:17:06.731
+!MESSAGE Failed to get connectors from RemoteProxyWizardDiscoveryStrategy
+!STACK 1
+org.eclipse.core.runtime.CoreException: HTTP Proxy Authentication Required: http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/jbosstools-directory.xml
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.mylyn.internal.discovery.core.util.P2TransportService.stream(P2TransportService.java:92)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.stream(WebUtil.java:161)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.readResource(WebUtil.java:95)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.RemoteExternalBundleDiscoveryStrategy.loadRegistry(RemoteExternalBundleDiscoveryStrategy.java:91)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.ExternalBundleDiscoveryStrategy.performDiscovery(ExternalBundleDiscoveryStrategy.java:117)
+	at org.jboss.tools.project.examples.internal.discovery.ChainedDiscoveryStrategy.performDiscovery(ChainedDiscoveryStrategy.java:62)
+	at org.eclipse.mylyn.internal.discovery.core.model.ConnectorDiscovery.performDiscovery(ConnectorDiscovery.java:114)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardManager.loadWizards(ProxyWizardManager.java:107)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardUpdateJob.run(ProxyWizardUpdateJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	... 14 more
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2016-10-26 11:17:06.731
+!MESSAGE HTTP Proxy Authentication Required: http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/jbosstools-directory.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.sendRetrieveRequest(FileReader.java:389)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader.read(FileReader.java:240)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.mylyn.internal.discovery.core.util.P2TransportService.stream(P2TransportService.java:92)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.stream(WebUtil.java:161)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.readResource(WebUtil.java:95)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.RemoteExternalBundleDiscoveryStrategy.loadRegistry(RemoteExternalBundleDiscoveryStrategy.java:91)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.ExternalBundleDiscoveryStrategy.performDiscovery(ExternalBundleDiscoveryStrategy.java:117)
+	at org.jboss.tools.project.examples.internal.discovery.ChainedDiscoveryStrategy.performDiscovery(ChainedDiscoveryStrategy.java:62)
+	at org.eclipse.mylyn.internal.discovery.core.model.ConnectorDiscovery.performDiscovery(ConnectorDiscovery.java:114)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardManager.loadWizards(ProxyWizardManager.java:107)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardUpdateJob.run(ProxyWizardUpdateJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 3 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:06.731
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.central 4 0 2016-10-26 11:17:09.428
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.createRemoteFileIOCoreException(InternalURLTransport.java:218)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.checkFile(InternalURLTransport.java:557)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.doGetLastModified(InternalURLTransport.java:211)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:175)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:144)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$2.run(URLTransportUtility.java:279)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:09.486
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+
+!ENTRY org.jboss.tools.central 4 0 2016-10-26 11:17:09.901
+!MESSAGE Connection refused: connect
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:996)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:850)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at java.net.URL.openStream(URL.java:1037)
+	at org.jboss.tools.central.installation.BundleFamilyExtension.loadStream(BundleFamilyExtension.java:81)
+	at org.jboss.tools.central.installation.BundleFamilyExtension.loadBundleList(BundleFamilyExtension.java:47)
+	at org.jboss.tools.central.installation.InstallationChecker.getUnits(InstallationChecker.java:99)
+	at org.jboss.tools.central.installation.InstallationChecker.getEarlyAccessUnits(InstallationChecker.java:79)
+	at org.jboss.tools.central.installation.InstallationChecker.hasEarlyAccess(InstallationChecker.java:72)
+	at org.jboss.tools.central.editors.JBossCentralEditor$HeaderText$3.run(JBossCentralEditor.java:571)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:10.407
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:10.407
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:10.407
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:10.407
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-26 11:17:10.409
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-maven-4.2.GA.xml
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:10.438
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:10.440
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:10.440
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:10.440
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-26 11:17:10.442
+!MESSAGE Invalid URL: http://download.jboss.org/gatein/quickstarts/jboss-portal-6.2/project-examples-jboss-portal6.2-jbds8.0-001.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-10-26 11:17:10.456
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-10-26 11:17:10.458
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\singhpur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:10.495
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:10.495
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:10.495
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:10.495
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-26 11:17:10.497
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-shared-4.2.GA.xml
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:10.544
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:10.544
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:10.544
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:10.544
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-26 11:17:10.546
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-community-4.2.Beta2.xml
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:10.689
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:10.690
+!MESSAGE Proxy Authentication Required
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-26 11:17:10.690
+!MESSAGE org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+!STACK 1
+org.eclipse.ecf.filetransfer.IncomingFileTransferException: Proxy Authentication Required
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:658)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2016-10-26 11:17:10.690
+!MESSAGE Proxy Authentication Required
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-26 11:17:10.691
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-category-4.2.xml
+
+!ENTRY org.eclipse.ui 4 4 2016-10-26 11:17:25.689
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.TaskList.
+!SESSION 2016-10-27 12:17:15.010 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data C:\CortolConsors -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.fx.core 4 0 2016-10-27 12:17:18.393
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core [1262]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+       org.eclipse.jdt.annotation [347]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.fx.osgi.util 4 0 2016-10-27 12:17:18.393
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.osgi.util [1264]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+       org.eclipse.fx.core [1262]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+              org.eclipse.jdt.annotation [347]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.browser 4 0 2016-10-27 12:17:18.409
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.browser [1408]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.osgi.util; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.osgi.util; bundle-version="1.0.0.201408150602"
+       org.eclipse.fx.osgi.util [1264]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+              org.eclipse.fx.core [1262]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+                     org.eclipse.jdt.annotation [347]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.gettingstarted 4 0 2016-10-27 12:17:18.425
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.gettingstarted [1415]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.browser
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.browser; bundle-version="3.6.3.201411271001-RELEASE"; singleton:="true"
+       org.springsource.ide.eclipse.commons.browser [1408]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.osgi.util; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.osgi.util; bundle-version="1.0.0.201408150602"
+              org.eclipse.fx.osgi.util [1264]
+                Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+                  -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+                     org.eclipse.fx.core [1262]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+                            org.eclipse.jdt.annotation [347]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.356
+!MESSAGE System property http.proxyHost is not set but should be tefipx.tieto.com.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property https.proxyHost is not set but should be 10.32.235.40.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property https.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property socksProxyHost is not set but should be 10.32.235.40.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property socksProxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property https.proxyHost is not set but should be 10.32.235.40.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property https.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property socksProxyHost is not set but should be 10.32.235.40.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property socksProxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property socksProxyHost is not set but should be 10.32.235.40.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-27 12:17:22.371
+!MESSAGE System property socksProxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-10-27 12:17:24.024
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-10-27 12:17:24.024
+!MESSAGE Could not load repository template extension contributed by 'org.springsource.ide.eclipse.dashboard.ui' with connectorKind 'jira'
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-10-27 12:17:24.024
+!MESSAGE Could not load repository template extension contributed by 'org.springsource.ide.eclipse.dashboard.ui' with connectorKind 'jira'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-10-27 12:17:31.992
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-10-27 12:17:31.992
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\singhpur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-27 12:17:37.216
+!MESSAGE Unable to load properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties. Falling back on embedded properties
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.loadProperties(VersionPropertiesProvider.java:276)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:151)
+	at org.jboss.tools.foundation.core.properties.internal.VersionPropertiesProvider.getValue(VersionPropertiesProvider.java:217)
+	at org.jboss.tools.central.installation.InstallationChecker.<init>(InstallationChecker.java:53)
+	at org.jboss.tools.central.installation.InstallationChecker.getInstance(InstallationChecker.java:66)
+	at org.jboss.tools.central.editors.JBossCentralEditor$HeaderText$3.run(JBossCentralEditor.java:571)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-27 12:17:37.216
+!MESSAGE Unable to retrieve properties from http://download.jboss.org/jbosstools/configuration/ide-config.properties
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2016-10-27 12:18:50.166
+!MESSAGE Connection to http://dist.springsource.com/release/STS/doc/updates.xml failed on Can't connect to SOCKS proxy:Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:Connection timed out: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2016-10-27 12:18:50.183
+!MESSAGE Connection to https://spring.io/blog.atom failed on Can't connect to SOCKS proxy:Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:Connection timed out: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientSecureProtocolSocketFactory.performConnection(ECFHttpClientSecureProtocolSocketFactory.java:93)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientSecureProtocolSocketFactory.connectSocket(ECFHttpClientSecureProtocolSocketFactory.java:77)
+	at org.apache.http.conn.scheme.SchemeLayeredSocketFactoryAdaptor2.connectSocket(SchemeLayeredSocketFactoryAdaptor2.java:60)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2016-10-27 12:19:01.642
+!MESSAGE Connection to http://download.jboss.org/jbosstools/discovery/nightly/core/4.2.luna/jbosstools-directory.xml failed on Can't connect to SOCKS proxy:Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:Connection timed out: connect
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.jboss.tools.central 4 0 2016-10-27 12:19:01.659
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.createRemoteFileIOCoreException(InternalURLTransport.java:218)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.checkFile(InternalURLTransport.java:557)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.doGetLastModified(InternalURLTransport.java:211)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:175)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.getLastModified(InternalURLTransport.java:144)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$2.run(URLTransportUtility.java:279)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-27 12:19:01.659
+!MESSAGE Error checking remote timestamp for url http://planet.jboss.org/feeds/buzz 
+
+!ENTRY org.jboss.tools.project.examples 4 0 2016-10-27 12:19:23.834
+!MESSAGE All attempts to discover connectors have failed
+!SUBENTRY 1 org.eclipse.mylyn.discovery.core 4 0 2016-10-27 12:19:23.834
+!MESSAGE Failed to get connectors from RemoteProxyWizardDiscoveryStrategy
+!STACK 0
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.mylyn.internal.discovery.core.util.P2TransportService.stream(P2TransportService.java:101)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.stream(WebUtil.java:161)
+	at org.eclipse.mylyn.internal.discovery.core.util.WebUtil.readResource(WebUtil.java:95)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.RemoteExternalBundleDiscoveryStrategy.loadRegistry(RemoteExternalBundleDiscoveryStrategy.java:91)
+	at org.jboss.tools.project.examples.internal.discovery.xpl.ExternalBundleDiscoveryStrategy.performDiscovery(ExternalBundleDiscoveryStrategy.java:117)
+	at org.jboss.tools.project.examples.internal.discovery.ChainedDiscoveryStrategy.performDiscovery(ChainedDiscoveryStrategy.java:62)
+	at org.eclipse.mylyn.internal.discovery.core.model.ConnectorDiscovery.performDiscovery(ConnectorDiscovery.java:114)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardManager.loadWizards(ProxyWizardManager.java:107)
+	at org.jboss.tools.central.internal.discovery.wizards.ProxyWizardUpdateJob.run(ProxyWizardUpdateJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.mylyn.internal.discovery.core.util.P2TransportService.stream(P2TransportService.java:92)
+	... 9 more
+Caused by: org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:174)
+	... 14 more
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-27 12:19:26.075
+!MESSAGE java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-27 12:19:26.075
+!MESSAGE java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-27 12:19:26.075
+!MESSAGE java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-27 12:19:26.075
+!MESSAGE java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-27 12:19:26.075
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-community-4.2.Beta2.xml
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-27 12:19:26.091
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-maven-4.2.GA.xml
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-27 12:19:26.106
+!MESSAGE java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-27 12:19:26.106
+!MESSAGE java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-10-27 12:19:26.106
+!MESSAGE java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.jboss.tools.foundation.core 4 0 2016-10-27 12:19:26.106
+!MESSAGE java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+!STACK 0
+java.net.SocketException: Can't connect to SOCKS proxy:connect timed out
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:428)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:84)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.openStreams(HttpClientRetrieveFileTransfer.java:618)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:885)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer.sendRetrieveRequest(AbstractRetrieveFileTransfer.java:576)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.MultiProtocolRetrieveAdapter.sendRetrieveRequest(MultiProtocolRetrieveAdapter.java:106)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.transfer(InternalURLTransport.java:365)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.performDownload(InternalURLTransport.java:334)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:257)
+	at org.jboss.tools.foundation.core.ecf.internal.InternalURLTransport.download(InternalURLTransport.java:239)
+	at org.jboss.tools.foundation.core.ecf.URLTransportUtility$3.run(URLTransportUtility.java:325)
+	at org.jboss.tools.foundation.core.jobs.BarrierProgressWaitJob.run(BarrierProgressWaitJob.java:85)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-27 12:19:26.106
+!MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-shared-4.2.GA.xml
+
+!ENTRY org.jboss.tools.project.examples 2 0 2016-10-27 12:19:26.106
+!MESSAGE Invalid URL: http://download.jboss.org/gatein/quickstarts/jboss-portal-6.2/project-examples-jboss-portal6.2-jbds8.0-001.xml
+!SESSION 2016-11-11 10:43:53.735 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.fx.core 4 0 2016-11-11 10:43:57.011
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core [1262]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+       org.eclipse.jdt.annotation [347]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.fx.osgi.util 4 0 2016-11-11 10:43:57.027
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.osgi.util [1264]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+       org.eclipse.fx.core [1262]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+              org.eclipse.jdt.annotation [347]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.browser 4 0 2016-11-11 10:43:57.042
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.browser [1408]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.osgi.util; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.osgi.util; bundle-version="1.0.0.201408150602"
+       org.eclipse.fx.osgi.util [1264]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+              org.eclipse.fx.core [1262]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+                     org.eclipse.jdt.annotation [347]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.gettingstarted 4 0 2016-11-11 10:43:57.042
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.gettingstarted [1415]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.browser
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.browser; bundle-version="3.6.3.201411271001-RELEASE"; singleton:="true"
+       org.springsource.ide.eclipse.commons.browser [1408]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.osgi.util; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.osgi.util; bundle-version="1.0.0.201408150602"
+              org.eclipse.fx.osgi.util [1264]
+                Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+                  -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+                     org.eclipse.fx.core [1262]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+                            org.eclipse.jdt.annotation [347]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2016-11-11 10:44:37.744
+!MESSAGE System property http.proxyHost is not set but should be 10.32.234.40.
+
+!ENTRY org.eclipse.core.net 1 0 2016-11-11 10:44:37.760
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-11-11 10:44:39.585
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-11-11 10:44:39.585
+!MESSAGE Could not load repository template extension contributed by 'org.springsource.ide.eclipse.dashboard.ui' with connectorKind 'jira'
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-11-11 10:44:39.585
+!MESSAGE Could not load repository template extension contributed by 'org.springsource.ide.eclipse.dashboard.ui' with connectorKind 'jira'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-11-11 10:44:48.040
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-11-11 10:44:48.040
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\singhpur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-11-11 10:46:54.905 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.fx.core 4 0 2016-11-11 10:46:58.150
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.core [1262]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+       org.eclipse.jdt.annotation [347]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.fx.osgi.util 4 0 2016-11-11 10:46:58.166
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.fx.osgi.util [1264]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+       org.eclipse.fx.core [1262]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+              org.eclipse.jdt.annotation [347]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.browser 4 0 2016-11-11 10:46:58.197
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.browser [1408]
+  Unresolved requirement: Require-Bundle: org.eclipse.fx.osgi.util; bundle-version="0.9.0"
+    -> Bundle-SymbolicName: org.eclipse.fx.osgi.util; bundle-version="1.0.0.201408150602"
+       org.eclipse.fx.osgi.util [1264]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+              org.eclipse.fx.core [1262]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+                     org.eclipse.jdt.annotation [347]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.springsource.ide.eclipse.commons.gettingstarted 4 0 2016-11-11 10:46:58.197
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.gettingstarted [1415]
+  Unresolved requirement: Require-Bundle: org.springsource.ide.eclipse.commons.browser
+    -> Bundle-SymbolicName: org.springsource.ide.eclipse.commons.browser; bundle-version="3.6.3.201411271001-RELEASE"; singleton:="true"
+       org.springsource.ide.eclipse.commons.browser [1408]
+         Unresolved requirement: Require-Bundle: org.eclipse.fx.osgi.util; bundle-version="0.9.0"
+           -> Bundle-SymbolicName: org.eclipse.fx.osgi.util; bundle-version="1.0.0.201408150602"
+              org.eclipse.fx.osgi.util [1264]
+                Unresolved requirement: Require-Bundle: org.eclipse.fx.core; bundle-version="0.9.0"
+                  -> Bundle-SymbolicName: org.eclipse.fx.core; bundle-version="1.0.0.201408150602"
+                     org.eclipse.fx.core [1262]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.annotation; bundle-version="[2.0.0,3.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.annotation; bundle-version="2.0.0.v20140415-1436"
+                            org.eclipse.jdt.annotation [347]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2016-11-11 10:47:11.443
+!MESSAGE System property http.proxyHost is not set but should be 10.32.234.40.
+
+!ENTRY org.eclipse.core.net 1 0 2016-11-11 10:47:11.443
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2016-11-11 10:47:13.112
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-11-11 10:47:13.112
+!MESSAGE Could not load repository template extension contributed by 'org.springsource.ide.eclipse.dashboard.ui' with connectorKind 'jira'
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2016-11-11 10:47:13.112
+!MESSAGE Could not load repository template extension contributed by 'org.springsource.ide.eclipse.dashboard.ui' with connectorKind 'jira'
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-11-11 10:47:21.427
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-11-11 10:47:21.427
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\singhpur'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

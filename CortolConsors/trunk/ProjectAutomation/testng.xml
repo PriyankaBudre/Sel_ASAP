@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+  <!--  <test name="MercuryTest">
+    <classes>
+      <class name="test.java.TestsForMercuryTours">
+          <methods>
+              <include name="testRegisterUser"/>
+              <include name="testLogin"/>
+          </methods>      
+       </class>   
+    </classes>
+  </test> 
+  <test name="AppiumTest">
+      <classes>
+          <class name="test.java.TestsForAppium">
+              <methods>
+                  <include name="testLinkedInSignIn"/>
+				  <include name="testTwo"/> 
+              </methods>			             
+          </class>
+      </classes>
+  </test>
+  -->
+  <test name="ConsorsWebTest">
+    <classes>
+      <class name="test.java.TestsForGmailCleanUp">
+          <methods>
+              <include name="testConsorsPOC"/>             
+          </methods>      
+       </class>   
+    </classes>
+  </test>
+</suite> <!-- Suite -->

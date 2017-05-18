@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src_forexAndroidREL2"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/java-client-4.1.2-javadoc.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/eclipse/poi-3.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-3.0.0/selenium-server-standalone-3.0.0-beta3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/java-client-4.1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/selenium-java-2.39.0/selenium-2.39.0/libs/testng-6.8.5.jar" sourcepath="C:/Users/singhpur/.m2/repository/org/testng/testng/6.8.5/testng-6.8.5-sources.jar"/>
+	<classpathentry exported="true" kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

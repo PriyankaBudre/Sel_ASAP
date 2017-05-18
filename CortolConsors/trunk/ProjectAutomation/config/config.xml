@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<!--  Configuration file for all Test Classes  -->
+<config>
+    <env>TEST</env>
+	<classes>
+		<class id="TestForDemo">		
+			<driver>
+				<type>appium</type>
+				<url>http://127.0.0.1:4723/wd/hub</url>
+				<capabilities>
+					<capability>
+						<name>automationName</name>
+						<value>Appium</value>
+					</capability>
+					<capability>
+						<name>platformName</name>
+						<value>Android</value>
+					</capability>
+					<capability>
+						<name>appPackage</name>
+						<value>se.forex.android.mobilbank.test</value>
+					</capability>
+					<capability>
+						<name>deviceName</name>
+						<value>FA56SY900226</value>
+					</capability>
+					<capability>
+						<name>appActivity</name>
+						<value>se.forex.android.mobilbank.view.SplashActivity</value>
+					</capability>
+					<capability>
+                      <name>platformVersion</name>
+                      <value>5.0.2</value>
+             	  </capability>
+				</capabilities>
+			</driver>		
+		</class>
+	</classes>
+</config>

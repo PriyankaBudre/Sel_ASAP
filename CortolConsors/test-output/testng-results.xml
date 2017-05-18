@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21771743" started-at="2017-01-09T12:07:17Z" finished-at="2017-01-09T18:10:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21771743" started-at="2017-01-09T12:07:17Z" finished-at="2017-01-09T18:10:09Z">
+      <class name="ForexAutomation.java.TestForDemo">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:ForexAutomation.java.TestForDemo@1e8b406]" name="beforeClass" is-config="true" duration-ms="29643" started-at="2017-01-09T17:37:17Z" finished-at="2017-01-09T17:37:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:ForexAutomation.java.TestForDemo@1e8b406]" name="beforeMethod" is-config="true" duration-ms="57" started-at="2017-01-09T17:37:47Z" finished-at="2017-01-09T17:37:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ForexAutomation.java.TestForDemo.transfer() throws java.net.MalformedURLException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="transfer()[pri:0, instance:ForexAutomation.java.TestForDemo@1e8b406]" name="transfer" duration-ms="21741997" started-at="2017-01-09T17:37:47Z" finished-at="2017-01-09T23:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transfer -->
+      </class> <!-- ForexAutomation.java.TestForDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
